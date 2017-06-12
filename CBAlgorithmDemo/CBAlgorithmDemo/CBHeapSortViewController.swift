@@ -28,7 +28,7 @@ class CBHeapSortViewController: UIViewController {
         result.append(newItem)
         var i = list.count
         while i > 0 {
-            let fi: Int = (i - 1) / 2
+            let fi: Int = i / 2 - 1
             if result[fi] > newItem {
                 let tmpValue = result[fi]
                 result[fi] = newItem
